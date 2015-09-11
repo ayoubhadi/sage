@@ -2,6 +2,35 @@
 	box-sizing: border-box;
 }
 
+
+h2{
+	text-align:center;
+	text-transform: uppercase;
+	font-family:'Teko', sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+	padding: 20px 0;
+	letter-spacing: 3px;
+}
+
+h3{
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-family:'Teko', sans-serif;
+	font-weight: 400;
+	font-size: 22px;
+	letter-spacing: 3px;
+	text-decoration: none;
+	margin-top: 15px;
+	margin-bottom: 12px;
+}
+
+img {
+	width: 100%;
+	margin:0 auto;
+}
+
 img.logo{
 	float:left;
 	width: 70px;
@@ -102,40 +131,6 @@ nav.carousel_nav{
 	color: #fff;
 }
 
-section.container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-
-h2{
-	text-align:center;
-	text-transform: uppercase;
-	font-family:'Teko', sans-serif;
-	font-weight: 400;
-	font-size: 30px;
-	padding: 20px 0;
-	letter-spacing: 3px;
-}
-
-h3{
-	width: 100%;
-	text-align: center;
-	text-transform: uppercase;
-	font-family:'Teko', sans-serif;
-	font-weight: 400;
-	font-size: 22px;
-	letter-spacing: 3px;
-	text-decoration: none;
-	margin-top: 15px;
-	margin-bottom: 12px;
-}
-
-img {
-	width: 100%;
-	margin:0 auto;
-}
-
 .tesla{
 	float:left;
 	width: 49%;
@@ -161,6 +156,7 @@ img {
 
 .tesla p, .discovery p, .stuhrling p, .infinity p{
 	font-family: 'Titillium Web', sans-serif;
+	font-weight: 300;
 	font-size: 12px;
 	text-align: center;
 	margin-top: 12px;
@@ -173,6 +169,12 @@ img {
 
 .stuhrling p, .infinity p{
 	margin-bottom: 35px;
+}
+
+section.container {
+    width: 90%;
+    margin: 0 auto;
+    min-width: 400px;
 }
 
 section.container a{
@@ -188,8 +190,11 @@ section.container a{
 }
 
 .projects_border{
+	display:block;
 	border-bottom: solid #f63c3c;
 	width: 142px;
+    min-width: 150px;
+    z-index: 10;
 }
 
 .main_nav .active{
@@ -235,6 +240,68 @@ section.container a{
 	margin-top: 15px;
 }
 
+.stuhrling figure{
+	position:relative;
+}
+
+
+.hover_caption{
+	display: none;
+	font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: 300;
+	position: absolute;
+	background-color: #f63c3c;
+	text-align: center;
+    border: solid #000 9px;
+    width: 100%;
+    height: 99%;
+    top: 0;
+	padding-top: 20%;
+}
+
+
+
+time{
+	display:block;
+}
+
+
+
+.hover_caption ul li{
+	display:inline-block;
+	padding-top: 5%;
+	font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.hover_caption ul li:after {
+    content: "  /";
+}
+.hover_caption ul li:last-child:after {
+    content: "";
+}
+
+.stuhrling figure:hover img {
+	opacity: 0;
+}
+
+.stuhrling figure:hover figcaption{
+	display: block;
+}
+
+.stuhrling:hover{
+	color: #f63c3c;
+}
+
+
 aside.content{
 	padding:40px 0;
 	width: 60%;
@@ -257,14 +324,12 @@ aside.content p{
 }
 
 aside.content ul li{
-	
 	display:inline-block;
 	background: #30282a;
 	width: 23%;
-    float: left;
  	margin-right: 1.5%;
  	margin-bottom: 1.5%;
-    padding: 30px 55px;
+    padding: 30px 0;
 }
 
 aside.content ul li:last-child{
@@ -280,6 +345,7 @@ aside.content ul li a{
 	text-transform: uppercase;
 	font-size: 20px;
 	line-height: 40px;
+	text-align: center;
 }
 
 .fa{
@@ -305,6 +371,8 @@ footer.container p{
 	line-height: 15px;
 	text-align: left;
 }
+
+
 
 
 
